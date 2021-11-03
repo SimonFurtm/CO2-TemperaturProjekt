@@ -1,18 +1,23 @@
 # CO2-TemperaturProjekt
 
 - Install dependencies for server
-npm install
+ 
+ npm install
 
 - Install dependencies for client
+
 npm run client-install
 
 - Run the client & server with concurrently
-npm run dev
+ 
+ npm run dev
 
 - Run the Express server only
-npm run server
+ 
+ npm run server
 
--Run the React client only
+- Run the React client only
+
 npm run client
 
 - Server runs on http://localhost:5000 and client on http://localhost:3000
