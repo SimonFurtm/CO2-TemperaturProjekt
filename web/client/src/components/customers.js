@@ -19,7 +19,7 @@ class Customers extends Component {
   render() {
     return (
       <div>
-        <h2>Co2 Daten</h2>
+        <h2>Co2 Test Tabelle</h2>
         <ul>
         {this.state.customers.map(customer => 
           <li key={customer.id}>{customer.time} {customer.co2} {customer.temperatur}</li>
