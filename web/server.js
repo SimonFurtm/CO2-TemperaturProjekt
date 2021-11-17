@@ -1,9 +1,17 @@
+//express
 const express = require('express');
 const cors = require('cors');
+const port = 5000;
 
+//db
+const db = require('./mariaDB');
+const bodyParser = require("body-parser");
 const app = express();
 
-app.get('/api/customers', cors(), (req, res) => {
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.get('/api/hardcodedData', cors(), (req, res) => {
   const customers = [
     {id: 1, time: '13:36', co2: '750', temperatur: '16'},
     {id: 2, time: '13:37', co2: '700', temperatur: '15,5'},
@@ -17,6 +25,62 @@ app.get('/api/customers', cors(), (req, res) => {
   res.json(customers);
 });
 
-const port = 5000;
+app.get('/api/raspberryData', cors(), (req, res) => {
+  const data = [
+    {id: 1, time: '13:36', co2: '750',luftfaeuchtigkeit: '50' , temperatur: '16'},
+    {id: 1, time: '13:36', co2: '750',luftfaeuchtigkeit: '50' , temperatur: '16'},
+    {id: 1, time: '13:36', co2: '750',luftfaeuchtigkeit: '50' , temperatur: '16'},
+    {id: 1, time: '13:36', co2: '750',luftfaeuchtigkeit: '50' , temperatur: '16'},
+
+
+  ];
+
+  res.json(data);
+});
+
+//Database API
+
+//get
+app.get('/daten/get', async (req, res) => {
+  try {
+      const result = await db.pool.query("select * from Daten");
+      res.send(result);
+  } catch (err) {
+      throw err;
+  }
+});
+
+//post
+app.post('/daten/post', async (req, res) => {
+  let task = req.body;
+  try {
+      const result = await db.pool.query("insert into Daten (description) values (?)", [task.description]);
+      res.send(result);
+  } catch (err) {
+      throw err;
+  }
+});
+
+//put
+app.put('/daten/put', async (req, res) => {
+  let task = req.body;
+  try {
+      const result = await db.pool.query("update Daten set description = ?, completed = ? where id = ?", [task.description, task.completed, task.id]);
+      res.send(result);
+  } catch (err) {
+      throw err;
+  } 
+});
+
+//delete
+app.delete('/daten/delete', async (req, res) => {
+  let id = req.query.id;
+  try {
+      const result = await db.pool.query("delete from Daten where id = ?", [id]);
+      res.send(result);
+  } catch (err) {
+      throw err;
+  } 
+});
 
 app.listen(port, () => `Server running on port ${port}`);

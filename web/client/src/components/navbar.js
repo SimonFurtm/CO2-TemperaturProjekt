@@ -28,11 +28,11 @@ class NavBar extends Component {
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <br />
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="#raspberry">Raspberry</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">CO2</NavDropdown.Item>
-              <br />
-              <NavDropdown.Item href="#action/3.2">Luftfäuchtichkeit</NavDropdown.Item>
+              <NavDropdown.Item href="#action/co2">|CO2|</NavDropdown.Item>
+              <NavDropdown.Item href="#action/air">|Luftfäuchtichkeit|</NavDropdown.Item>
+              <NavDropdown.Item href="#action/temp">|Temperatur|</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           </Navbar.Collapse>

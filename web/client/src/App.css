@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgba(47, 227, 233, 0.555);
+  background-color: rgba(148, 224, 226, 0.555);
 }
 
 .App-logo {
@@ -9,8 +9,8 @@
 }
 
 .App-header {
-  background-color: #222;
-  color: rgb(14, 110, 148);
+  background-color: rgba(47, 227, 233, 0.555);
+  color: rgba(22, 116, 119, 0.555);
 }
 
 .App-title {
