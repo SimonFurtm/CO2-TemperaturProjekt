@@ -43,7 +43,7 @@ app.get('/api/raspberryData', cors(), (req, res) => {
 //get
 app.get('/daten/get', async (req, res) => {
   try {
-      const result = await db.pool.query("select * from Daten");
+      const result = await db.pool.query("select * from RPIS");
       res.send(result);
   } catch (err) {
       throw err;
