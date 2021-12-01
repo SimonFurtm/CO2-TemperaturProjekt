@@ -7,6 +7,8 @@ const Home = () => {
         <div>
             test
             <DataTable />
+            <Customers />
+
 
         </div>
     );
