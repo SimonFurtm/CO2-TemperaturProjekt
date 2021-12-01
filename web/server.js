@@ -40,8 +40,8 @@ app.get('/api/raspberryData', cors(), (req, res) => {
 
 //Database API
 
-//get
-app.get('/daten/get', async (req, res) => {
+//get RPIS
+app.get('/rpis/get', async (req, res) => {
   try {
       const result = await db.pool.query("select * from RPIS");
       res.send(result);
@@ -50,26 +50,14 @@ app.get('/daten/get', async (req, res) => {
   }
 });
 
-//post
-app.post('/daten/post', async (req, res) => {
-  let task = req.body;
+//get Daten
+app.get('/daten/get', async (req, res) => {
   try {
-      const result = await db.pool.query("insert into Daten (description) values (?)", [task.description]);
+      const result = await db.pool.query("select * from Daten");
       res.send(result);
   } catch (err) {
       throw err;
   }
-});
-
-//put
-app.put('/daten/put', async (req, res) => {
-  let task = req.body;
-  try {
-      const result = await db.pool.query("update Daten set description = ?, completed = ? where id = ?", [task.description, task.completed, task.id]);
-      res.send(result);
-  } catch (err) {
-      throw err;
-  } 
 });
 
 //delete

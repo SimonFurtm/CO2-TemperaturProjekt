@@ -13,7 +13,7 @@
   "author": "Brad Traversy",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^1.14.6"
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

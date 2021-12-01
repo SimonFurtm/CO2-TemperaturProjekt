@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './customers.css';
+import './table.css';
 
 class Customers extends Component {
   constructor() {
@@ -8,7 +8,6 @@ class Customers extends Component {
       customers: []
     };
   }
-
 
   componentDidMount() {
     fetch('/api/hardcodedData')
