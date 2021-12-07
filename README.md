@@ -1,21 +1,20 @@
 # CO2-TemperaturProjekt
 
-- Backend
+Backend
  
- ExpressJS (https://expressjs.com/)
+- ExpressJS (https://expressjs.com/)
 
-- Frontend
+Frontend
 
-React (https://reactjs.org/)
+- React (https://reactjs.org/)
+- React-Bootstrap (https://react-bootstrap.github.io/)
 
-React-Bootstrap (https://react-bootstrap.github.io/)
-
-- Run the Express server 
+Run the Express server 
  
-./web/backend> node server.js
+- ./web/backend> node server.js
 
-- Run the React client
+Run the React client
 
-./web/frontend> npm start
+- ./web/frontend> npm start
 
-- Server runs on http://localhost:5000 and client on http://localhost:3000
+Server runs on http://localhost:5000 and client on http://localhost:3000
