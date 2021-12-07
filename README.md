@@ -1,23 +1,20 @@
 # CO2-TemperaturProjekt
 
-- Install dependencies for server
+Backend
  
- npm install
+- ExpressJS (https://expressjs.com/)
 
-- Install dependencies for client
+Frontend
 
-npm run client-install
+- React (https://reactjs.org/)
+- React-Bootstrap (https://react-bootstrap.github.io/)
 
-- Run the client & server with concurrently
+Run the Express server 
  
- npm run dev
+- ./web/backend> node server.js
 
-- Run the Express server only
- 
- npm run server
+Run the React client
 
-- Run the React client only
+- ./web/frontend> npm start
 
-npm run client
-
-- Server runs on http://localhost:5000 and client on http://localhost:3000
+Server runs on http://localhost:5000 and client on http://localhost:3000
