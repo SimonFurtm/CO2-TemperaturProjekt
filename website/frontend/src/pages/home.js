@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import DataTable from "../components/dataTable";
+import DataTable from "../components/data/dataTable";
 import Customers from "../components/customers";
 
 const Home = () => {

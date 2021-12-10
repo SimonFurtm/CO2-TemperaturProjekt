@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Table } from 'react-bootstrap';
 
-class TestTable extends Component {
+class TempTable extends Component {
   constructor() {
     super();
     this.state = {
@@ -18,15 +18,13 @@ class TestTable extends Component {
   render() {
     return (
       <div>
-        <h2>Co2 Test Tabelle</h2>
+        <h2>Temperatur Tabelle</h2>
         <Table responsive hover size="sm">
           <thead>
             <tr>
               <th> </th>
               <th>Zeit</th>
               <th>Datum</th>
-              <th>CO²</th>
-              <th>Luftfäuchtichkeit</th>
               <th>Temperatur</th>
             </tr>
           </thead>
@@ -36,8 +34,6 @@ class TestTable extends Component {
                 <th key={customer.id}>{customer.id} </th>
                 <th key={customer.id}>{customer.time} </th>
                 <th key={customer.id}>{customer.date} </th>
-                <th key={customer.id}>{customer.co2} </th>
-                <th key={customer.id}>{customer.lf} </th>
                 <th key={customer.id}>{customer.temperatur} </th>
               </tr>
             )}
@@ -49,4 +45,4 @@ class TestTable extends Component {
   }
 }
 
-export default TestTable;
+export default TempTable;

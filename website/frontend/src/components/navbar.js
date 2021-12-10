@@ -3,7 +3,13 @@ import { Button, Navbar, Container, Nav,NavDropdown, Row, Col } from 'react-boot
 import logo from '../logo.svg';
 
 
+function sendMail(e){
+  e.preventDefault();
+  console.log('E-mail wird versendet...');
+}
+
 class NavBar extends Component {
+  
   constructor() {
     super();
     this.state = {
@@ -14,7 +20,7 @@ class NavBar extends Component {
     return (
       <div>
         
-        <Navbar>
+        <Navbar fixed="top">
           <Container>
             <Navbar.Brand href="/">
               <img src={logo} className="App-logo" alt="logo"/> CoZwei
@@ -29,11 +35,14 @@ class NavBar extends Component {
                 <NavDropdown.Item href="/data/temp">Temperatur</NavDropdown.Item>
               </NavDropdown>
             </Nav>
+            <Button disabled onSubmit={sendMail} >Send a E-mail</Button>
           </Container>
         </Navbar>
       </div>
     );
   }
 }
+
+
 
 export default NavBar;

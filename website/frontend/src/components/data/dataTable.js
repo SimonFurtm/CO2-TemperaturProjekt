@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Table } from 'react-bootstrap';
-import './table.css';
 
 class DataTable extends Component {
   constructor() {

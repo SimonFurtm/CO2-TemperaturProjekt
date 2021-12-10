@@ -5,8 +5,6 @@ import './App.css';
 import { BrowserRouter as Router} from "react-router-dom";
 
 //components
-import Customers from './components/customers';
-import DataTable from './components/dataTable';
 import NavBar from './components/navbar';
 
 
@@ -17,12 +15,20 @@ function App() {
   {/*"Main"*/}
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
-          <NavBar />
-        </header>
-        <Webpages />
-      </div>
+      <body className="App">
+        <div >
+          <header className="App-header">
+            <NavBar />
+
+          </header>
+          <div className='App-content'>
+            <Webpages />
+          </div>
+          <footer className="App-footer">
+            This is a footer
+          </footer>
+        </div>
+      </body>
     </Router>
   );
 }
