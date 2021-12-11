@@ -19,13 +19,12 @@ function App() {
         <div >
           <header className="App-header">
             <NavBar />
-
           </header>
           <div className='App-content'>
             <Webpages />
           </div>
           <footer className="App-footer">
-            This is a footer
+            {/*create a div with: Impressum, Contact data and a help page. And maybe a q&a page*/}
           </footer>
         </div>
       </body>
