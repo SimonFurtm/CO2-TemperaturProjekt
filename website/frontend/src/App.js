@@ -6,7 +6,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 
 //components
 import NavBar from './components/navbar';
-
+import Footer from './components/footer';
 
 //pages
 import Webpages from './pages/index'
@@ -23,9 +23,7 @@ function App() {
           <div className='App-content'>
             <Webpages />
           </div>
-          <footer className="App-footer">
-            {/*create a div with: Impressum, Contact data and a help page. And maybe a q&a page*/}
-          </footer>
+          <Footer />
         </div>
       </body>
     </Router>

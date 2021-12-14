@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Navbar, Container, Nav,NavDropdown, Row, Col } from 'react-bootstrap';
-import logo from '../logo.svg';
-
-
-
-function sendMail(e){
-  e.preventDefault();
-  console.log('E-mail wird versendet...');
-}
+import "./components.css";
 
 class NavBar extends Component {
   
@@ -19,11 +12,19 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div>
-        
-        <Navbar fixed="bottom">
+      <div>m
+        <br />
+        <Navbar>
           <Container>
-           This is a Footer
+            <Nav className="justify-content-center">
+              <Row>
+                <Col><Nav.Link href="/impressum">Impressum</Nav.Link></Col>
+                <Col><Nav.Link href="/about">About</Nav.Link></Col>
+                <Col><Nav.Link href="/contact">Kontakt</Nav.Link></Col>
+                <Col><p class="adsimple-121896969">CoZwei<br />Alte Bundestraße 11<br />4AHINF 2. Stockwerk, <br />5600 St. Johann, <br />Österreich</p></Col>
+                <Col><Nav.Link href="/help">Help</Nav.Link></Col> 
+              </Row>
+            </Nav>
           </Container>
         </Navbar>
       </div>

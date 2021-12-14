@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const Dashboard = () => {
     useEffect (() => {
-            document.title = 'Raspberry';
+            document.title = 'Dashboard';
         }
     );
 

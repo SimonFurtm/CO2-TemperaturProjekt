@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Navbar, Container, Nav,NavDropdown, Row, Col } from 'react-bootstrap';
 import logo from '../logo.svg';
+import "./components.css";
 
 
 function sendMail(e){
@@ -18,7 +19,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div>
+      <div className='navbar'>
         
         <Navbar fixed="top">
           <Container>

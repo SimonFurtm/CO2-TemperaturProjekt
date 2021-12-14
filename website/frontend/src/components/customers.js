@@ -18,7 +18,7 @@ class TestTable extends Component {
   render() {
     return (
       <div>
-        <h2>Co2 Test Tabelle</h2>
+        <h2>Test Tabelle</h2>
         <Table responsive hover size="sm">
           <thead>
             <tr>

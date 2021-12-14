@@ -12,20 +12,16 @@
 }
 
 .App-header {
-  background-color: rgba(11, 175, 224, 0.555);
-  height: 10vh;
+  height: 12vh;
 }
 
 .App-footer {
-  background-color: rgba(11, 175, 224, 0.555);
   width: auto;
-  align-self: flex-end;
-  
+  height: 3vh;  
 }
 
 .App-content{
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 5%;
 }
 .App-title {
   font-size: 1.5em;
