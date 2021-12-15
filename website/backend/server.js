@@ -42,7 +42,6 @@ app.get('/rpis/get', async (req, res) => {
 app.get('/daten/get', async (req, res) => {
   try {
       const result = await db.pool.query("select * from Daten");
-      {/*Christopher*/}
       res.send(result);
   } catch (err) {
       throw err;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Table } from 'react-bootstrap';
 
+import './formate';
+
 class Customers extends Component {
   constructor() {
     super();
@@ -9,14 +11,16 @@ class Customers extends Component {
     };
   }
 
-
   componentDidMount() {
     fetch('/daten/get')
       .then(res => res.json())
-      .then(dataTable => this.setState({dataTable}, () => console.log('Data fetched...', dataTable)));
+      .then(dataTable => this.setState({dataTable}, () => console.log('Data fetched...', dataTable)))
   }
+  
+
 
   render() {
+    
     return (
       <div>
         <h2>Co2 Tabelle</h2>
@@ -33,8 +37,8 @@ class Customers extends Component {
             {this.state.dataTable.map(dataTable => 
               <tr>
                 <th key={dataTable.RPIS_SensorID}>{dataTable.RPIS_SensorID} </th>
-                <th key={dataTable.RPIS_SensorID}>{dataTable.Datum} </th>
-                <th key={dataTable.RPIS_SensorID}>{dataTable.Uhrzeit} </th>
+                <th key={dataTable.RPIS_SensorID}>{changeDatumFormat(dataTable.Datum)} </th>
+                <th key={dataTable.RPIS_SensorID}>{changeTimeFormat(dataTable.Uhrzeit)} </th>
                 <th key={dataTable.RPIS_SensorID}>{dataTable.CO2} </th>
               </tr>
             )}
