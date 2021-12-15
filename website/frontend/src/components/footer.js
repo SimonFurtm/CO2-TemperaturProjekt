@@ -12,7 +12,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div>m
+      <div>
         <br />
         <Navbar>
           <Container>
@@ -21,8 +21,10 @@ class NavBar extends Component {
                 <Col><Nav.Link href="/impressum">Impressum</Nav.Link></Col>
                 <Col><Nav.Link href="/about">About</Nav.Link></Col>
                 <Col><Nav.Link href="/contact">Kontakt</Nav.Link></Col>
-                <Col><p class="adsimple-121896969">CoZwei<br />Alte Bundestraße 11<br />4AHINF 2. Stockwerk, <br />5600 St. Johann, <br />Österreich</p></Col>
                 <Col><Nav.Link href="/help">Help</Nav.Link></Col> 
+              </Row>   
+              <Row>
+                <Col><p class="adsimple-121896969">Alte Bundestraße 11<br />4AHINF 2. Stockwerk<br />5600 St. Johann<br />Österreich</p></Col>
               </Row>
             </Nav>
           </Container>

@@ -5,14 +5,15 @@ class TempTable extends Component {
   constructor() {
     super();
     this.state = {
-      customers: []
+        dataTable: []
     };
   }
 
+
   componentDidMount() {
-    fetch('/hardcodedData')
+    fetch('/daten/get')
       .then(res => res.json())
-      .then(customers => this.setState({customers}, () => console.log('Customers fetched...', customers)));
+      .then(dataTable => this.setState({dataTable}, () => console.log('Data fetched...', dataTable)));
   }
 
   render() {
@@ -23,18 +24,18 @@ class TempTable extends Component {
           <thead>
             <tr>
               <th> </th>
-              <th>Zeit</th>
               <th>Datum</th>
+              <th>Zeit</th>
               <th>Temperatur</th>
             </tr>
           </thead>
           <tbody>
-            {this.state.customers.map(customer => 
+            {this.state.dataTable.map(dataTable => 
               <tr>
-                <th key={customer.id}>{customer.id} </th>
-                <th key={customer.id}>{customer.time} </th>
-                <th key={customer.id}>{customer.date} </th>
-                <th key={customer.id}>{customer.temperatur} </th>
+                <th key={dataTable.RPIS_SensorID}>{dataTable.RPIS_SensorID} </th>
+                <th key={dataTable.RPIS_SensorID}>{dataTable.Datum} </th>
+                <th key={dataTable.RPIS_SensorID}>{dataTable.Uhrzeit} </th>
+                <th key={dataTable.RPIS_SensorID}>{dataTable.Temperatur} </th>
               </tr>
             )}
             
