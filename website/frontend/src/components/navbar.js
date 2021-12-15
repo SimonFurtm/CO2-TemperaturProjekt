@@ -36,7 +36,7 @@ class NavBar extends Component {
                 <NavDropdown.Item href="/data/temp">Temperatur</NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Button disabled onSubmit={sendMail} >Send a E-mail</Button>
+            <Button onSubmit={sendMail} >Send a E-mail</Button>
           </Container>
         </Navbar>
       </div>
