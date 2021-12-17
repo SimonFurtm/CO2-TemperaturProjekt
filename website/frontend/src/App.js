@@ -9,7 +9,7 @@ import NavBar from './components/navbar';
 import Footer from './components/footer';
 
 //pages
-import Webpages from './pages/index'
+import Webpages from './pages/webpages'
 
 function App() {
   {/*"Main"*/}

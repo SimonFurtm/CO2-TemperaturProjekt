@@ -1,4 +1,3 @@
-const { Component } = require("react")
  
 class Formate{
   changeDatumFormat(datum2) {
