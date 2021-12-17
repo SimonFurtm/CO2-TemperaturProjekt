@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Table } from 'react-bootstrap';
+import formate from'./formate';
 
 class TempTable extends Component {
   constructor() {
@@ -23,7 +24,7 @@ class TempTable extends Component {
         <Table responsive hover size="sm">
           <thead>
             <tr>
-              <th> </th>
+              <th>Raspberry</th>
               <th>Datum</th>
               <th>Zeit</th>
               <th>Temperatur</th>
@@ -33,8 +34,8 @@ class TempTable extends Component {
             {this.state.dataTable.map(dataTable => 
               <tr>
                 <th key={dataTable.RPIS_SensorID}>{dataTable.RPIS_SensorID} </th>
-                <th key={dataTable.RPIS_SensorID}>{dataTable.Datum} </th>
-                <th key={dataTable.RPIS_SensorID}>{dataTable.Uhrzeit} </th>
+                <th key={dataTable.RPIS_SensorID}>{formate.changeDatumFormat(dataTable.Datum)} </th>
+                <th key={dataTable.RPIS_SensorID}>{formate.changeTimeFormat(dataTable.Uhrzeit)} </th>
                 <th key={dataTable.RPIS_SensorID}>{dataTable.Temperatur} </th>
               </tr>
             )}

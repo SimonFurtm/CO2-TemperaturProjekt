@@ -1,7 +1,7 @@
 const { Component } = require("react")
  
-
-function changeDatumFormat(datum2) {
+class Formate{
+  changeDatumFormat(datum2) {
     let year = ""
     let month = ""
     let day = ""
@@ -16,16 +16,20 @@ function changeDatumFormat(datum2) {
     return datum3;
 }
 
-function changeTimeFormat(time2) {
-  let hours = ""
-  let minutes = ""
-  let seconds = ""
+  changeTimeFormat(time2) {
+    let hours = ""
+    let minutes = ""
+    let seconds = ""
 
-  hours = time2.slice(0,2)
-  minutes = time2.slice(2,4)
-  seconds = time2.slice(4,6)
+    hours = time2.slice(0,2)
+    minutes = time2.slice(2,4)
+    seconds = time2.slice(4,6)
 
-  const time3 = hours + ":" + minutes + ":" + seconds
+    const time3 = hours + ":" + minutes + ":" + seconds
 
-  return time3;
+    return time3;
+  }
 }
+
+const formate = new Formate();
+export default formate;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Table } from 'react-bootstrap';
+import formate from'./formate';
 
 class DataTable extends Component {
   constructor() {
@@ -35,8 +36,8 @@ class DataTable extends Component {
             {this.state.dataTable.map(dataTable => 
               <tr>
                 <th key={dataTable.RPIS_SensorID}>{dataTable.RPIS_SensorID} </th>
-                <th key={dataTable.RPIS_SensorID}>{dataTable.Datum} </th>
-                <th key={dataTable.RPIS_SensorID}>{dataTable.Uhrzeit} </th>
+                <th key={dataTable.RPIS_SensorID}>{formate.changeDatumFormat(dataTable.Datum)} </th>
+                <th key={dataTable.RPIS_SensorID}>{formate.changeTimeFormat(dataTable.Uhrzeit)} </th>
                 <th key={dataTable.RPIS_SensorID}>{dataTable.Temperatur} </th>
                 <th key={dataTable.RPIS_SensorID}>{dataTable.Luftfeuchtigkeit} </th>
                 <th key={dataTable.RPIS_SensorID}>{dataTable.CO2} </th>
