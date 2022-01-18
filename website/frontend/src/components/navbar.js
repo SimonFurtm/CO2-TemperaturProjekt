@@ -26,16 +26,19 @@ class NavBar extends Component {
             <Navbar.Brand href="/">
               <img src={logo} className="App-logo" alt="logo"/> CoZwei
             </Navbar.Brand>
-            <Navbar.Collapse id="basic-navbar-nav" />
-            <Nav className = "me-auto">
-              <Nav.Link href="/">Home</Nav.Link> 
-              <Nav.Link href="/dashboard">Dashboard</Nav.Link> 
-              <NavDropdown title="Daten" id="nav-dropdown">
-                <NavDropdown.Item href="/data/co2">CO2</NavDropdown.Item>
-                <NavDropdown.Item href="/data/air">Luftfeuchtichkeit</NavDropdown.Item>
-                <NavDropdown.Item href="/data/temp">Temperatur</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
+              <Nav className = "me-auto">
+              <Navbar.Collapse id="basic-navbar-nav">
+
+                <Nav.Link href="/">Home</Nav.Link> 
+                <Nav.Link href="/dashboard">Dashboard</Nav.Link> 
+                <NavDropdown title="Daten" id="nav-dropdown">
+                  <NavDropdown.Item href="/data/co2">CO2</NavDropdown.Item>
+                  <NavDropdown.Item href="/data/air">Luftfeuchtichkeit</NavDropdown.Item>
+                  <NavDropdown.Item href="/data/temp">Temperatur</NavDropdown.Item>
+                </NavDropdown>
+                </Navbar.Collapse>
+              </Nav>
+            
             <Button disabled onSubmit={sendMail} >Send a E-mail</Button>
           </Container>
         </Navbar>

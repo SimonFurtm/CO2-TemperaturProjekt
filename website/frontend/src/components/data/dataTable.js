@@ -28,7 +28,7 @@ class DataTable extends Component {
               <th>Datum</th>
               <th>Zeit</th>
               <th>Temperatur</th>
-              <th>Luftfäuchtichkeit</th>
+              <th>Luftfeuchtichkeit</th>
               <th>CO²</th>
             </tr>
           </thead>
