@@ -16,12 +16,14 @@ import Temperatur from './temperatur';
 import PageNotFound from "./404";
 import InternalServer from "./InternalServer";
 import Impressum from "./Impressum";
+import Grenzwerte from "./grenzwerte";
 
 
 const Wepbages = () => {
     return(
         <Routes>
           <Route exact path="/" element = {<Home />} />
+          <Route path="/grenzwert" element = {<Grenzwerte />} /> 
           <Route path="/dashboard" element = {<Dashboard />} /> 
           <Route path="/data" element = {<Dashboard />} />    
           <Route path="/data/co2" element = {<CO2 />} />

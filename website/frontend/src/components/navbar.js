@@ -29,7 +29,7 @@ class NavBar extends Component {
               <Nav className = "me-auto">
               <Navbar.Collapse id="basic-navbar-nav">
 
-                <Nav.Link href="/">Home</Nav.Link> 
+                <Nav.Link href="/grenzwert">Grenzwerte</Nav.Link> 
                 <Nav.Link href="/dashboard">Dashboard</Nav.Link> 
                 <NavDropdown title="Daten" id="nav-dropdown">
                   <NavDropdown.Item href="/data/co2">CO2</NavDropdown.Item>
