@@ -27,7 +27,7 @@ class Customers extends Component {
               <th>Raspberry</th>
               <th>Datum</th>
               <th>Zeit</th>
-              <th>CO²</th>
+              <th>CO₂</th>
             </tr>
           </thead>
           <tbody>

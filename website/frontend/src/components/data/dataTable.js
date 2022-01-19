@@ -10,7 +10,6 @@ class DataTable extends Component {
     };
   }
 
-
   componentDidMount() {
     fetch('/daten/get')
       .then(res => res.json())
@@ -29,7 +28,7 @@ class DataTable extends Component {
               <th>Zeit</th>
               <th>Temperatur</th>
               <th>Luftfeuchtichkeit</th>
-              <th>CO²</th>
+              <th>CO₂</th>
             </tr>
           </thead>
           <tbody>

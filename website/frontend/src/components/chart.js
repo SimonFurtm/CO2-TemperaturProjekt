@@ -1,53 +1,46 @@
 import React, { Component } from "react";
-import { PieChart, Pie, Sector, Cell } from "recharts";
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 
-const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 }
-];
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+var data = [];
+
 
 class Chart extends Component {
-  render(){
-    return (
-      <PieChart width={800} height={400}>
-        <Pie
-          data={data}
-          cx={120}
-          cy={200}
-          innerRadius={60}
-          outerRadius={80}
-          fill="#8884d8"
-          paddingAngle={5}
-          dataKey="value"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-        <Pie
-          data={data}
-          cx={420}
-          cy={200}
-          startAngle={180}
-          endAngle={0}
-          innerRadius={60}
-          outerRadius={80}
-          fill="#8884d8"
-          paddingAngle={5}
-          dataKey="value"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-      </PieChart>
-      );
-  }
+    constructor() {
+      super();
+      this.state = {
+          chartData: []
+      };
+    }
   
-  
-}
+    componentDidMount() { 
+      fetch('/daten/get')
+        .then(res => res.json())
+        .then(chartData => this.setState({chartData}, () => console.log('Data fetched...', chartData)))
+        
+    }
 
+  render(){
+    {this.state.chartData.map(chartData =>
+      data = [
+        {name: 12, value: chartData.co2},
+        
+      ]
+      )}
+    return (
+<div>
+    <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+    <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+    <XAxis dataKey="name" />
+    <YAxis dataKey="value" />
+    <Tooltip />
+    <Line type="monotone" dataKey="value" stroke="#8884d8" activeDot={{ r: 8 }} />
+    <Line type="monotone" dataKey="name" stroke="#82ca9d" />
+    </LineChart>
+      
+</div>
+  );
+  } 
+}
 export default Chart
