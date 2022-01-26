@@ -21,19 +21,19 @@ const Grenzwerte = () => {
 </div>
 
 <div class="formgroup" id="name-form">
-    <label for="name">CO2</label>
-    <input type="text" id="name" name="name" />
+    <label for="CO2">CO2</label>
+    <input type="text" id="CO2" name="CO2" />
 </div>
 
 <div class="formgroup" id="name-form">
-    <label for="name">Luftfeuchtigkeit</label>
-    <input type="text" id="name" name="name" />
+    <label for="luftfeuchtigkeit">Luftfeuchtigkeit</label>
+    <input type="text" id="luftfeuchtigkeit" name="luftfeuchtigkeit" />
 </div>
 
 
 <div class="formgroup" id="name-form">
-    <label for="name">Temperatur</label>
-    <input type="text" id="name" name="name" />
+    <label for="temperatur">Temperatur</label>
+    <input type="text" id="temperatur" name="temperatur" />
 </div>
         <input type="submit" value="Submit" />
     </form>  
