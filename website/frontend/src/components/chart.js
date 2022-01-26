@@ -31,29 +31,6 @@ class Chart extends Component {
     data3 = tmp;
 
     console.log(data3)
-    
-       var data2 = [
-         { name: "12.01.2022", uv: 100},
-         { name: "13.01.2022", uv: 1000},
-         { name: "14.01.2022", uv: 300},
-         { name: "15.01.2022", uv: 1000},
-         { name: "12.01.2022", uv: 100},
-         { name: "13.01.2022", uv: 1000},
-         { name: "14.01.2022", uv: 300},
-         { name: "15.01.2022", uv: 1000},
-         { name: "12.01.2022", uv: 100},
-         { name: "13.01.2022", uv: 1000},
-         { name: "14.01.2022", uv: 300},
-         { name: "15.01.2022", uv: 1000},
-         { name: "12.01.2022", uv: 100},
-         { name: "13.01.2022", uv: 1000},
-         { name: "14.01.2022", uv: 300},
-         { name: "15.01.2022", uv: 1000},
-         { name: "13.01.2022", uv: 1000},
-         { name: "14.01.2022", uv: 300},
-         { name: "15.01.2022", uv: 1000},
-       ]
-       console.log(data2)
       
       
     return (
@@ -64,7 +41,6 @@ class Chart extends Component {
     <XAxis dataKey="name" />
     <YAxis />
     <Tooltip />
-    <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
     <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
     </LineChart>
       

@@ -35,6 +35,7 @@ class NavBar extends Component {
                   <NavDropdown.Item href="/data/co2">CO2</NavDropdown.Item>
                   <NavDropdown.Item href="/data/air">Luftfeuchtichkeit</NavDropdown.Item>
                   <NavDropdown.Item href="/data/temp">Temperatur</NavDropdown.Item>
+                  <NavDropdown.Item href="/">Alle Daten</NavDropdown.Item>
                 </NavDropdown>
                 </Navbar.Collapse>
               </Nav>
