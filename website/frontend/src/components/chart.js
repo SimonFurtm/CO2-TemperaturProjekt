@@ -23,8 +23,10 @@ class Chart extends Component {
   render(){
     {this.state.chartData.map(chartData =>
       data = [
-        {name: 12, value: chartData.co2},
-        
+        { name: "12.01.22", uv: 400},
+        { name: "13.01.22", uv: 413},
+        { name: "14.01.22", uv: 300},
+        { name: "15.01.22", uv: 1000},
       ]
       )}
     return (
@@ -33,10 +35,10 @@ class Chart extends Component {
     <Line type="monotone" dataKey="uv" stroke="#8884d8" />
     <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
     <XAxis dataKey="name" />
-    <YAxis dataKey="value" />
+    <YAxis />
     <Tooltip />
-    <Line type="monotone" dataKey="value" stroke="#8884d8" activeDot={{ r: 8 }} />
-    <Line type="monotone" dataKey="name" stroke="#82ca9d" />
+    <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
+    <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
     </LineChart>
       
 </div>
