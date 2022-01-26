@@ -13,30 +13,23 @@ const Grenzwerte = () => {
             <h1>Grenzwerte</h1>
             <p>Legen Sie ihre Grenzwerte fest</p>
 
-<form>
+            <form>
+                <div class="formgroup" id="email-form">
+                    <label for="email">Your e-mail*</label>
+                    <input type="email" id="email" name="email" />
 
-<div class="formgroup" id="email-form">
-    <label for="email">Your e-mail*</label>
-    <input type="email" id="email" name="email" />
-</div>
+                    <label for="CO2">CO2</label>
+                    <input type="text" id="CO2" name="CO2" />
 
-<div class="formgroup" id="name-form">
-    <label for="CO2">CO2</label>
-    <input type="text" id="CO2" name="CO2" />
-</div>
+                    <label for="luftfeuchtigkeit">Luftfeuchtigkeit</label>
+                    <input type="text" id="luftfeuchtigkeit" name="luftfeuchtigkeit" />
 
-<div class="formgroup" id="name-form">
-    <label for="luftfeuchtigkeit">Luftfeuchtigkeit</label>
-    <input type="text" id="luftfeuchtigkeit" name="luftfeuchtigkeit" />
-</div>
-
-
-<div class="formgroup" id="name-form">
-    <label for="temperatur">Temperatur</label>
-    <input type="text" id="temperatur" name="temperatur" />
-</div>
-        <input type="submit" value="Submit" />
-    </form>  
+                    <label for="temperatur">Temperatur</label>
+                    <input type="text" id="temperatur" name="temperatur" />
+                
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>  
         </div>
     )
 }

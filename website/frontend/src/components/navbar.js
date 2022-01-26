@@ -40,7 +40,7 @@ class NavBar extends Component {
                 </Navbar.Collapse>
               </Nav>
             
-            <Button disabled onSubmit={sendMail} >Send a E-mail</Button>
+            <Button onSubmit={sendMail} >Send a E-mail</Button>
           </Container>
         </Navbar>
       </div>

@@ -60,33 +60,33 @@ form{
   width: 500px;
   padding-top: 40px;
   color: black;
-  position: left;
+  position: center;
 }
 
 label, input, textarea{
   display: block; 
 }
+
 input, textarea{
-  width: 500px; 
+  width: 30vw; 
   border: none;
   border-radius: 20px;
   outline: none;
   padding: 10px;
-  font-family: 'Sniglet', cursive;
   font-size: 1em;
   color: #676767;
   transition: border 0.5s;
   -webkit-transition: border 0.5s;
   -moz-transition: border 0.5s;
   -o-transition: border 0.5s;
-  border: solid 3px #98d4f3;  
+  border: solid 3px rgb(31, 208, 231);  
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
-  
 }
+
 input:focus, textarea:focus{
-  border: solid 3px #77bde0;  
+  border: solid 3px rgb(31, 208, 231);  
 }
 
 textarea{
@@ -96,7 +96,7 @@ textarea{
 }
 
 input[type="submit"]{
-  background-color: blue;
+  background-color: rgb(31, 208, 231);
   color: white;
   height: 50px;
   cursor: pointer;
@@ -108,7 +108,7 @@ input[type="submit"]{
   transition: background-color 0.5s;
 }
 input[type="submit"]:hover{
-  background-color: #2bd7ddb7;
+  background-color: rgb(116, 222, 236);
   
 }
 label{
