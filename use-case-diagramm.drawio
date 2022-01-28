@@ -1,1 +1,95 @@
-<mxfile host="Electron" modified="2022-01-28T09:52:24.422Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/16.1.2 Chrome/96.0.4664.55 Electron/16.0.5 Safari/537.36" etag="nLDBKlB-vBm4Ts13A2bZ" version="16.1.2" type="device"><diagram id="Lh1Q5yLqhYMjMejz1neu" name="Seite-1">7VrbcqM4EP0aPzrFHefRl1xma2Y2u6mpbJ6mZBCgGZAYIeLL168Ekg2IJLbHdrxVmwcstRqJPn1otZoM7Gm2vKMgT76QEKYDywiXA3s2sCzTcjz+IySrWuKPjFoQUxRKpa3gEa2hFCq1EoWwaCkyQlKG8rYwIBjDgLVkgFKyaKtFJG2vmoMYaoLHAKS69AmFLKmlI8vfyu8hihO1suld1yMZUMrSkiIBIVk0RPbNwJ5SQljdypZTmArwFC71fbevjG4ejELMdrlh9hcc//2co/Sr8R0Z97++Jv6PoZzlBaSlNHgCccnWkMqHZiuFBH/+XDTLLB0HjNCBPXmBlCGO1Wcwh+kDKRBDBHOVOWGMZA2FcYpiMcBIzqUJy1LeMXmTlCxFGE433jO4ULdMPSafDi4bImnpHSQZZHTFVeSoJ0GXrDMV6xZbH9pSlDTcp24DkjXxZuItsLwhsd0DZ0vDeWB5KV91krdQ9n6Vgg+TDNAYccTGfNTIl/xa4WLU8mGFoxhzGmMcGjYENdJiLODwCT+qOXkrFr9PcM49BdUDcHtyNaQ5vd+BcpFZCiNxF+FaUVpxO0ICl0lEMJPvsmnJ/i3IUCr8cQ/TFyhmbVPhCF7fuFkFmx6vez1ud+xT+d3W/D4DDGKx1JyWkWh1EOeT8tjGO5NFwr30mINAjCx4eD06XpvYpF4T39UAM50ewPxT4eVqeD1CXBB6Twp2noh0BFjdNqr29QcHn2sN1BsUQ1zR8AGJp0B4XUaDqT2YTOMP5uQGLYXe6KM5qVKRBn63KOWh9YNfXrMNlNVDszMDpUe7m+EXgMSNPK0AQUJRkDAUlzi+KI59PHKOhtwdt2+9ECZdFFSWc0ascO4U3p949oS/G5/GX8s/piN7qEMVvfY24nAsjgC8hwmGbWwoKXEIQ5lywiVi/zTaz1JLtGfLxsBs1eg8QIq4UTzJeidxLUhJA/gWAWo9xtM7yHaIRTBsHVt09zXc4/Z4R8koTAFDL+3DTp/L5AoPBHHTXmWH43S8Xhsu72oeTjoTbW7s7plqohoZbaKKQRuzDyeVnneoPO2FiGtYJdJVvjynWiL9ejK3BwMxt6Ci4JXhm0rwXAlsz1eCLRmr3qrZ69JRkdpskJpP1vm7QJbbF0Vy03HbIdD8j5Lc07fnrN6dAY7hvKJ7mfHLvLlZCwPWpUAb0vBYHG/z232P3So615qKyhfIXPOyqKvF5+5B92Dqjs5LXf/N/MiIYMFgCnvPLvsnAc14uX8ScCjJz0BO539ynoKcZl917yiZgLtnnOzLAl7l1bt8cS+bLtax6NI9qpyaLvox+Vsh8ktDlWDEwz58EtCjnoDG3VGVt9ocUjVZWfXVK10ZCkMxx4TCAq3BvJpPECQXhlamu5OBO+ulzNu8754mN59j5CqD5hePvlPm0LiyTNv/PZ4oFRJFBTyJ5yx9GyqCBAU/xfLywNDjrUfZJZQlJCYYpDdbaefl3+p8JqI0Wfn2B2RsJevpoGSk7flGvLgeXXdODgcdHHbaivoR8naMLdaOsWVnMvxWTcHSU+O67qz5s+2t09dfPL8drCyjp/5i9UTdY1ST+7HSy8l3EEPKA1CBIO2t7W03v3lKgp8cmhAUSQVjzeDwtvpwJCkZNr8dvV+zufJbx4KrcxZu3F1zr/33UtM70sZpdzZO49CNs7sDdyc6eOPk3e2H8Fp9++8E9s2/</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-28T10:22:35.736Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="JEcxAQu_T9LOU_iJEL8_" version="16.4.7" type="github">
+  <diagram id="Lh1Q5yLqhYMjMejz1neu" name="Seite-1">
+    <mxGraphModel dx="462" dy="221" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DQeARYpilN0_i0HqNh7j-1" value="Benutzer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="180" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DQeARYpilN0_i0HqNh7j-2" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;Website&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="76" width="360" height="564" as="geometry" />
+        </mxCell>
+        <mxCell id="DQeARYpilN0_i0HqNh7j-3" value="Daten abrufen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="165" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DQeARYpilN0_i0HqNh7j-5" value="SensorHost" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="390" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DQeARYpilN0_i0HqNh7j-9" value="Eigenen Pi hinzufügen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="375" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DQeARYpilN0_i0HqNh7j-10" value="Filtern" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="290" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DQeARYpilN0_i0HqNh7j-13" value="E-Mail Benachrichtigung" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="90" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DQeARYpilN0_i0HqNh7j-14" value="Grenzwerte" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="240" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-4" value="filtern" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DQeARYpilN0_i0HqNh7j-1" target="DQeARYpilN0_i0HqNh7j-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-5" value="Daten von der&lt;br&gt;Website abrufen" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="DQeARYpilN0_i0HqNh7j-1" target="DQeARYpilN0_i0HqNh7j-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="145" y="210" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-6" value="Email angeben um benachrichtigt zu werden" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="DQeARYpilN0_i0HqNh7j-1" target="DQeARYpilN0_i0HqNh7j-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-7" value="Grenzwerte festelegen" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DQeARYpilN0_i0HqNh7j-1" target="DQeARYpilN0_i0HqNh7j-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-12" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" target="DQeARYpilN0_i0HqNh7j-5" edge="1" source="DQeARYpilN0_i0HqNh7j-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="418" as="sourcePoint" />
+            <mxPoint x="75" y="418" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-13" value="User fügt PI ein" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="np4s6OnDWn_0IANuJC83-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.2137" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-27" value="schickt Daten" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="np4s6OnDWn_0IANuJC83-26" target="DQeARYpilN0_i0HqNh7j-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="358" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-26" value="Sensor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="np4s6OnDWn_0IANuJC83-29" value="Generalisierung" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="DQeARYpilN0_i0HqNh7j-5" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="400" as="sourcePoint" />
+            <mxPoint x="75" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cavmLQhDHw_jjNV4KQfH-1" value="Daten&lt;br&gt;geier" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="530" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cavmLQhDHw_jjNV4KQfH-2" value="Daten extern&amp;nbsp;&lt;br&gt;Verwenden" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cavmLQhDHw_jjNV4KQfH-3" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cavmLQhDHw_jjNV4KQfH-1" target="cavmLQhDHw_jjNV4KQfH-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="550" as="sourcePoint" />
+            <mxPoint x="430" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
