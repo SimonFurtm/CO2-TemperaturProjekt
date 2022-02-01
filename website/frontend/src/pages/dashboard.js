@@ -13,7 +13,7 @@ const Dashboard = () => {
         <div>
             <h1>Dashboard</h1>
             
-            <Carousel>
+            <Carousel variant="dark">
                 <CarouselItem>
                     <ChartCo2 />
                     <Carousel.Caption>
