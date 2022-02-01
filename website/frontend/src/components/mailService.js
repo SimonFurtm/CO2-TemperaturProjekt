@@ -1,4 +1,4 @@
-class Form extends React.Component {
+class MailService extends React.Component {
     constructor() {
       super();
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,3 +31,5 @@ class Form extends React.Component {
       );
     }
   }
+
+export default MailService

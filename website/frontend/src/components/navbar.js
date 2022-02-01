@@ -3,20 +3,40 @@ import { Button, Navbar, Container, Nav,NavDropdown, Row, Col } from 'react-boot
 import logo from '../logo.svg';
 import "./components.css";
 
+const sgMail = require('@sendgrid/mail')
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-function sendMail(e){
-  e.preventDefault();
-  console.log('E-mail wird versendet...');
+const msg = {
+  to: 'simifurti123@gmail.com', // Change to your recipient
+  from: 'cozwei.project@gmail.com', // Change to your verified sender
+  subject: 'Sending with this API is Fun',
+  text: 'and easy to do anywhere, even with Node.js',
+  html: '<strong>and easy to do anywhere, even with React.js</strong>',
+}
+
+function sendMail(event){
+  alert('Email wird gesendet');
+  sgMail.send(msg);
+  sgMail.then(() => {
+    console.log('Email gesendet')
+  })
+  sgMail.catch((error) => {
+    console.error(error)
+  })
+  
+  alert('Email wird gesendet');
+  event.preventDefault(); 
 }
 
 class NavBar extends Component {
   
-  constructor() {
-    super();
-    this.state = {
-    };
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
+  
+  
   render() {
     return (
       <div className='navbar'>
@@ -40,7 +60,7 @@ class NavBar extends Component {
                 </Navbar.Collapse>
               </Nav>
             
-            <Button onSubmit={sendMail} >Send a E-mail</Button>
+            <Button onChange={sendMail} >Send a E-mail</Button>
           </Container>
         </Navbar>
       </div>

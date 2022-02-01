@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import formate from'../components/data/formate'
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import formate from '../data/formate';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 var data3 = [];
 
 
-class Chart extends Component {
+class ChartCo2 extends Component {
     constructor() {
       super();
       this.state = {
@@ -35,17 +35,18 @@ class Chart extends Component {
       
     return (
 <div>
-    <LineChart width={600} height={300} data={data3} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-    <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-    <XAxis dataKey="name" />
-    <YAxis />
-    <Tooltip />
-    <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-    </LineChart>
-      
+    <ResponsiveContainer width={'100%'} height={400} >
+      <LineChart width={800} height={400} data={data3} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+      <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+      <XAxis dataKey="name" />
+      <YAxis />
+      <Tooltip />
+      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      </LineChart>
+    </ResponsiveContainer>   
 </div>
   );
   } 
 }
-export default Chart
+export default ChartCo2

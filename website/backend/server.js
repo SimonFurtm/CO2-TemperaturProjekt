@@ -59,6 +59,17 @@ app.delete('/daten/delete', async (req, res) => {
   } 
 });
 
+//put
+app.put('/grenzwerte/put', async (req, res) => {
+  let id = req.query.id;
+  try {
+      const result = await db.pool.query("insert into Grenzwerte", [id]);
+      res.send(result);
+  } catch (err) {
+      throw err;
+  } 
+});
+
 app.get("/", (req, res) => res.send("Server is running!"));
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
