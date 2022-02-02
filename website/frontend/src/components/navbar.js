@@ -11,21 +11,22 @@ const msg = {
   from: 'cozwei.project@gmail.com', // Change to your verified sender
   subject: 'Sending with this API is Fun',
   text: 'and easy to do anywhere, even with Node.js',
-  html: '<strong>and easy to do anywhere, even with React.js</strong>',
+  html: '<strong>and easy to do anywhere, even with React.js</strong>:)',
 }
 
-function sendMail(event){
-  alert('Email wird gesendet');
+function sendMail(event,sgMail){
+  alert('Email sollte gesendet werden');
+  
   sgMail.send(msg);
   sgMail.then(() => {
-    console.log('Email gesendet')
-  })
+      console.log('Email sent')
+    });
   sgMail.catch((error) => {
-    console.error(error)
-  })
+      console.error(error)
+    });
   
-  alert('Email wird gesendet');
-  event.preventDefault(); 
+  alert('Email sollte gesendet werden');
+  //event.preventDefault(); 
 }
 
 class NavBar extends Component {
@@ -34,8 +35,6 @@ class NavBar extends Component {
     super(props);
     this.state = {};
   }
-
-  
   
   render() {
     return (
@@ -60,7 +59,7 @@ class NavBar extends Component {
                 </Navbar.Collapse>
               </Nav>
             
-            <Button onChange={sendMail} >Send a E-mail</Button>
+            <Button onClick={sendMail} >Send a E-mail</Button>
           </Container>
         </Navbar>
       </div>

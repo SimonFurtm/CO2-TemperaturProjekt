@@ -63,7 +63,7 @@ app.delete('/daten/delete', async (req, res) => {
 app.put('/grenzwerte/put', async (req, res) => {
   let id = req.query.id;
   try {
-      const result = await db.pool.query("insert into Grenzwerte", [id]);
+      const result = await db.pool.query("insert into grenzwerte");
       res.send(result);
   } catch (err) {
       throw err;
