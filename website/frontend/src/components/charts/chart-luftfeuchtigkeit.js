@@ -24,7 +24,7 @@ class ChartLuft extends Component {
   render(){
     console.log("Render")
     var tmp = this.state.chartData.map((chartData) => ({
-       name: formate.changeDatumFormat(chartData.Datum), uv: chartData.lf
+       name: formate.changeDatumFormat(chartData.Datum), uv: chartData.Luftfeuchtigkeit
     }));
 
     console.log(tmp)

@@ -24,7 +24,7 @@ class ChartTemp extends Component {
   render(){
     console.log("Render")
     var tmp = this.state.chartData.map((chartData) => ({
-       name: formate.changeDatumFormat(chartData.Datum), uv: chartData.temperatur
+       name: formate.changeDatumFormat(chartData.Datum), uv: chartData.Temperatur
     }));
 
     console.log(tmp)
