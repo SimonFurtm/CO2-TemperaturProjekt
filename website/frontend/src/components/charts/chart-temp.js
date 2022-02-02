@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import formate from '../data/formate';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
-
+//import {AreaChart,Area,XAxis,YAxis,CartesianGrid,Tooltip} from "recharts";
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 var data3 = [];
 
@@ -24,7 +24,7 @@ class ChartTemp extends Component {
   render(){
     console.log("Render")
     var tmp = this.state.chartData.map((chartData) => ({
-       name: formate.changeDatumFormat(chartData.Datum), uv: chartData.Temperatur
+       datum: formate.changeDatumFormat(chartData.Datum), Temperatur: chartData.Temperatur
     }));
 
     console.log(tmp)
@@ -35,18 +35,31 @@ class ChartTemp extends Component {
       
     return (
 <div>
+
     <ResponsiveContainer width={'100%'} height={400} >
       <LineChart width={800} height={400} data={data3} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-      <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+      <Line type="monotone" dataKey="Temperatur" unit="°C" stroke="#8884d8" />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-      <XAxis dataKey="name" />
-      <YAxis />
+      <XAxis dataKey="datum" />
+      <YAxis unit="°C"/>
       <Tooltip />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
       </LineChart>
-    </ResponsiveContainer> 
+    </ResponsiveContainer>
+      
+
 </div>
   );
   } 
 }
 export default ChartTemp
+/*    
+   <AreaChart width={500} height={400} data={data3} margin={{top: 10,right: 30, left: 0,bottom: 0}}
+    >
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="name" />
+      <YAxis />
+      <Tooltip />
+      <Area type="monotone" dataKey="GradCelsius" stroke="#8884d8" fill="#8884d8" />
+    </AreaChart>
+
+    */

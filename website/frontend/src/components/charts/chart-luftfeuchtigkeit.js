@@ -24,7 +24,7 @@ class ChartLuft extends Component {
   render(){
     console.log("Render")
     var tmp = this.state.chartData.map((chartData) => ({
-       name: formate.changeDatumFormat(chartData.Datum), uv: chartData.Luftfeuchtigkeit
+      datum: formate.changeDatumFormat(chartData.Datum), Luftfeuchtigkeit: chartData.Luftfeuchtigkeit, Uhrzeit: formate.changeTimeFormat(chartData.Uhrzeit)
     }));
 
     console.log(tmp)
@@ -37,12 +37,11 @@ class ChartLuft extends Component {
 <div>
     <ResponsiveContainer width={'100%'} height={400} >
       <LineChart width={800} height={400} data={data3} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-      <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+      <Line type="monotone" dataKey="Luftfeuchtigkeit" unit="%" stroke="#8884d8"  />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-      <XAxis dataKey="name" />
-      <YAxis />
+      <XAxis dataKey="datum"/>
+      <YAxis unit="%" />
       <Tooltip />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
       </LineChart>
     </ResponsiveContainer>
 </div>

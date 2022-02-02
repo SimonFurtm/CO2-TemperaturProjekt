@@ -24,7 +24,7 @@ class ChartCo2 extends Component {
   render(){
     console.log("Render")
     var tmp = this.state.chartData.map((chartData) => ({
-       name: formate.changeDatumFormat(chartData.Datum), uv: chartData.CO2
+      datum: formate.changeDatumFormat(chartData.Datum), co2: chartData.CO2
     }));
 
     console.log(tmp)
@@ -36,13 +36,12 @@ class ChartCo2 extends Component {
     return (
 <div>
     <ResponsiveContainer width={'100%'} height={400} >
-      <LineChart width={800} height={400} data={data3} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-      <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+      <LineChart width={800} height={400} data={data3} margin={{ top: 5, right: 20, bottom: 5, left: 20 }}>
+      <Line type="monotone" dataKey="co2" unit="ppm" stroke="#8884d8" />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-      <XAxis dataKey="name" />
-      <YAxis />
+      <XAxis dataKey="datum" />
+      <YAxis unit="ppm"/>
       <Tooltip />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
       </LineChart>
     </ResponsiveContainer>   
 </div>
