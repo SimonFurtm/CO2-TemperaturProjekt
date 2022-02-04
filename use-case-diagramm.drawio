@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-04T10:17:42.868Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="KijthTSj8ohSvLW8fDTe" version="16.5.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-02-04T10:19:27.870Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="bTqZMHXt5mBlkTbx7uFh" version="16.5.1" type="github" pages="2">
   <diagram id="Lh1Q5yLqhYMjMejz1neu" name="use-case-diagramm">
     <mxGraphModel dx="3324" dy="1474" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -107,7 +107,7 @@
         <mxCell id="MrqLa7qSdbv-BtwNGeHL-0" value="RPI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="b-YcUSS40ILZs1nYYGaf-1">
           <mxGeometry x="160" y="80" width="110" height="640" as="geometry" />
         </mxCell>
-        <mxCell id="MrqLa7qSdbv-BtwNGeHL-4" value="signal == true" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MrqLa7qSdbv-BtwNGeHL-0">
+        <mxCell id="MrqLa7qSdbv-BtwNGeHL-4" value="cronjob == true" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MrqLa7qSdbv-BtwNGeHL-0">
           <mxGeometry y="80" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="MrqLa7qSdbv-BtwNGeHL-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="MrqLa7qSdbv-BtwNGeHL-0">
