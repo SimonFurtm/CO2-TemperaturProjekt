@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgba(148, 224, 226, 0.557);
+  background-color: rgb(148, 223, 226);
   padding: 0px;
   min-height: 100vh;
   height: 100%;
@@ -50,7 +50,7 @@
 
 #form{
   height: 100%; 
-  background-color: #98d4f3;
+  background-color: rgb(148, 223, 226);
   overflow: hidden;
   position: center;
   
