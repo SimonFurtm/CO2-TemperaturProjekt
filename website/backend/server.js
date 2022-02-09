@@ -59,11 +59,31 @@ app.delete('/daten/delete', async (req, res) => {
   } 
 });
 
-//put
+//get Grenzwerte
+app.get('/rpis/get', async (req, res) => {
+  try {
+      const result = await db.pool.query("select * from Grenzwerte");
+      res.send(result);
+  } catch (err) {
+      throw err;
+  }
+});
+
+//delete Grenzwerte
+app.get('/rpis/delete', async (req, res) => {
+  try {
+      const result = await db.pool.query("delete from Grenzwerte where id = ?", [id]);
+      res.send(result);
+  } catch (err) {
+      throw err;
+  }
+});
+
+//put Grenzwerte
 app.put('/grenzwerte/put', async (req, res) => {
   let id = req.query.id;
   try {
-      const result = await db.pool.query("insert into grenzwerte");
+      const result = await db.pool.query("insert into Grenzwerte");
       res.send(result);
   } catch (err) {
       throw err;

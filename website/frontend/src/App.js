@@ -12,7 +12,7 @@ import Footer from './components/footer';
 import Webpages from './pages/webpages'
 
 function App() {
-  {/*"Main"*/}
+  
   return (
     <Router>
       <body className="App">
