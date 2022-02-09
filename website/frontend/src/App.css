@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(148, 223, 226);
+  background-color: rgba(148, 224, 226, 0.557);
   padding: 0px;
   min-height: 100vh;
   height: 100%;
@@ -44,17 +44,16 @@
   -webkit-transition: background-image 0.7s;
   -moz-transition: background-image 0.7s;
   -o-transition: background-image 0.7s;
-  width: 566px;
   padding-top: 2px;
 }
 
 #form{
   height: 100%; 
-  background-color: rgb(148, 223, 226);
+  background-color: #98d4f3;
   overflow: hidden;
-  position: center;
-  
+  position: center; 
 }
+
 form{
   margin: 0 auto;
   width: 500px;
@@ -83,6 +82,7 @@ input, textarea{
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
+  display: inline-flex;
 }
 
 input:focus, textarea:focus{
