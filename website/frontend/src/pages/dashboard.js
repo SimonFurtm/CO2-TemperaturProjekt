@@ -5,6 +5,8 @@ import ChartLuft from "../components/charts/chart-luftfeuchtigkeit";
 import ChartTemp from "../components/charts/chart-temp";
 import './dashboard.css';
 
+import ChartGoveeLuftfeuchtigkeit from "../components/charts/chart-govee-luft";
+import ChartGoveeTemp from "../components/charts/chart-govee-temp";
 const Dashboard = () => {
     useEffect (() => {
             document.title = 'Dashboard';
@@ -13,7 +15,7 @@ const Dashboard = () => {
     return (
         <div>
             <h1>Dashboard</h1>
-            
+            <h2>Raspberry Daten:</h2>
             <Carousel variant="dark">
                 <CarouselItem className="chart">
                     <ChartCo2 />
@@ -31,6 +33,22 @@ const Dashboard = () => {
                     <ChartLuft />
                     <Carousel.Caption>
                         <h3>Luftfeuchtigkeit</h3>
+                    </Carousel.Caption>
+                </CarouselItem>
+            </Carousel>
+            
+            <h2>Govee Daten:</h2>
+            <Carousel variant="dark">
+                <CarouselItem className="chart">
+                    <ChartGoveeLuftfeuchtigkeit />
+                    <Carousel.Caption>
+                        <h3>Luftfeuchtigkeit</h3>
+                    </Carousel.Caption>
+                </CarouselItem>
+                <CarouselItem className="chart">
+                    <ChartGoveeTemp />
+                    <Carousel.Caption>
+                        <h3>Temperatur</h3>
                     </Carousel.Caption>
                 </CarouselItem>
             </Carousel>
