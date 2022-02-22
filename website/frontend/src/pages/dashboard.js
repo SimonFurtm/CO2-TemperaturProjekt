@@ -37,6 +37,12 @@ const Dashboard = () => {
                 </CarouselItem>
             </Carousel>
             
+            
+        </div>
+    )
+}
+
+/*
             <h2>Govee Daten:</h2>
             <Carousel variant="dark">
                 <CarouselItem className="chart">
@@ -52,8 +58,5 @@ const Dashboard = () => {
                     </Carousel.Caption>
                 </CarouselItem>
             </Carousel>
-        </div>
-    )
-}
-
+*/
 export default Dashboard;

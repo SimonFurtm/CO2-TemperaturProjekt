@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import formate from '../data/formate';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
-import goveeData from '../goveeData'
+import goveeData from '../goveeData.json'
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 var data3 = [];
 
