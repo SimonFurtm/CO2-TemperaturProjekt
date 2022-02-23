@@ -14,11 +14,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.get('/hardcodedData', cors(), (req, res) => {
   const customers = [
     {id: 1, time: '13:36', date: '07.12.2021', co2: '750', lf: '69', temperatur: '16'},
-    {id: 2, time: '13:37', date: '07.12.2021', co2: '700', lf: '53', temperatur: '15,5'},
+    {id: 1, time: '13:37', date: '07.12.2021', co2: '700', lf: '53', temperatur: '15,5'},
     {id: 1, time: '13:38', date: '07.12.2021', co2: '725', lf: '37', temperatur: '15'},
     {id: 1, time: '13:39', date: '07.12.2021', co2: '800', lf: '34', temperatur: '17'},
-    {id: 2, time: '13:40', date: '07.12.2021', co2: '900', lf: '56', temperatur: '16,5'},
-    {id: 2, time: '13:41', date: '07.12.2021', co2: '1050', lf: '54', temperatur: '16,3'}
+    {id: 1, time: '13:40', date: '07.12.2021', co2: '900', lf: '56', temperatur: '16,5'},
+    {id: 1, time: '13:41', date: '07.12.2021', co2: '1050', lf: '54', temperatur: '16,3'}
 
   ];
 
@@ -26,7 +26,7 @@ app.get('/hardcodedData', cors(), (req, res) => {
 });
 
 
-//Database API-calls
+//Database APIs
 
 //get RPIS
 app.get('/rpis/get', async (req, res) => {

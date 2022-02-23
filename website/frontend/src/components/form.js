@@ -7,7 +7,6 @@ class GrenzwerteForm extends Component{
         this.state = {form:{email: ' ', co2: ' ',luftfeuchtigkeit: ' ', temperatur:' '}};
         
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
@@ -25,6 +24,7 @@ class GrenzwerteForm extends Component{
     handleSubmit(event) {
         alert('Grenzwerte werden gespeichert. \n\nEmail: ' + this.state.email + '\nCO2: ' + this.state.co2 + '\nLuftfeuchtigkeit: ' + this.state.luftfeuchtigkeit + '\nTemperatur: ' + this.state.temperatur);
         //event.preventDefault();
+        //const data = new FormData(event.target);
     }
 
     render() {

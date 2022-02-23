@@ -23,10 +23,7 @@ class MailService extends React.Component {
           <label htmlFor="email">Enter your email</label>
           <input id="email" name="email" type="email" />
   
-          <label htmlFor="birthdate">Enter your birth date</label>
-          <input id="birthdate" name="birthdate" type="text" />
-  
-          <button>Send data!</button>
+          <button>Send data Test</button>
         </form>
       );
     }
