@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, useRef  } from 'react';
 import { Button, Navbar, Container, Nav,NavDropdown, Row, Col } from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
 import logo from '../logo.svg';
 import "./components.css";
+
 
 const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)

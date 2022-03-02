@@ -17,6 +17,7 @@ import PageNotFound from "./404";
 import InternalServer from "./InternalServer";
 import Impressum from "./Impressum";
 import Grenzwerte from "./grenzwerte";
+import Test from "./test";
 
 
 const Wepbages = () => {
@@ -31,6 +32,7 @@ const Wepbages = () => {
           <Route path="/data/temp" element = {<Temperatur />} />
           <Route path="/impressum" element = {<Impressum />} />
           <Route path="/500" element = {<InternalServer />} />
+          <Route path="/test" element = {<Test />} />
           <Route path="*" element = {<PageNotFound />} />     
         </Routes>
     );
