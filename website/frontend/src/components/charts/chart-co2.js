@@ -4,6 +4,7 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContai
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 var data3 = [];
+var data4 = [];
 
 
 class ChartCo2 extends Component {
@@ -23,13 +24,18 @@ class ChartCo2 extends Component {
 
   render(){
     console.log("Render")
-    var tmp = this.state.chartData.map((chartData) => ({
-      datum: formate.changeDatumFormat(chartData.Datum), co2: chartData.CO2, time: formate.changeTimeFormat(chartData.Uhrzeit)
+    data3 = this.state.chartData.map((chartData) => ({
+      RPI_ID: chartData.RPI_ID, datum: formate.changeDatumFormat(chartData.Datum), co2: chartData.CO2, time: formate.changeTimeFormat(chartData.Uhrzeit)
     }));
+    /*
+    for(var i = 0; i < data3.length; i++){
+        if(data3[i].RPI_ID == this.props.dataFromParent){
+          data4[i] = data3[i]
+        }
 
-    console.log(tmp)
-    data3 = tmp;
-
+    }*/
+    var id = this.props.dataFromParent;
+    console.log(id)
     console.log(data3)
       
       

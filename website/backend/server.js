@@ -47,6 +47,14 @@ app.get('/daten/get', async (req, res) => {
       throw err;
   }
 });
+app.get('/daten/get_mit_ID', async (req, res) => {
+  try {
+      const result = await db.pool.query("select * from Daten");
+      res.send(result);
+  } catch (err) {
+      throw err;
+  }
+});
 
 //delete
 app.delete('/daten/delete', async (req, res) => {
