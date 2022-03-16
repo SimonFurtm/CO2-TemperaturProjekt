@@ -12,8 +12,8 @@ const Test = () => {
     const sendEmail = (e) => {
     
         emailjs.send("service_18g3pzj","template_y50ygcl",{
-            to_name: name,
-            from_name: "cozwei",
+            to_name: "CoZwei",
+            from_name: name,
             message: "bitte funktionier :) weil des is so vo da website gesendet",
             reply_to: email,
             });
@@ -27,7 +27,7 @@ const Test = () => {
             to_name: "simon",
             from_name: "cozwei",
             message: "bitte funktionier :) weil des is so vo da website gesendet",
-            reply_to: "simifurti123@gmail.com",
+            reply_to: "cozwei.project@gmail.com",
             });
         alert("Email wurde an " + email + " versendet.")
     }
