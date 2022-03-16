@@ -1,39 +1,54 @@
 import React, { useEffect,useRef } from "react";
 import emailjs,{ init } from '@emailjs/browser';
 
-init("lLUKmWgHA9IfR-zoZ");
+init("lLUKmWgHA9IfR-zoZ"); //user id
 
 const Test = () => {
     const form = useRef();
+    var name;
+    var msg;
+    var email;
 
     const sendEmail = (e) => {
-        e.preventDefault();
     
-        emailjs.sendForm('service_18g3pzj', 'template_y50ygcl', form.current, init)
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-        });
+        emailjs.send("service_18g3pzj","template_y50ygcl",{
+            to_name: name,
+            from_name: "cozwei",
+            message: "bitte funktionier :) weil des is so vo da website gesendet",
+            reply_to: email,
+            });
+
+        alert("Email wurde an " + email + " versendet.")
+
     };
 
-        
+    const sendTestEmail = (e) => {
+        emailjs.send("service_18g3pzj","template_y50ygcl",{
+            to_name: "simon",
+            from_name: "cozwei",
+            message: "bitte funktionier :) weil des is so vo da website gesendet",
+            reply_to: "simifurti123@gmail.com",
+            });
+        alert("Email wurde an " + email + " versendet.")
+    }
     useEffect (() => {
-            document.title = 'I bin am verzweifeln';
+            document.title = 'Kontakt';
         }
     );
 
     return (
         <div>
             <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" email="reply_to" />
+                <label>Message</label>
+                <textarea msg="message" />
+                <input type="submit" value="Send" />
             </form>
+
+            <button onClick={sendTestEmail}>Send Test email.</button>
         </div>
     )
 }

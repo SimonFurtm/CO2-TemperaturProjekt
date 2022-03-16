@@ -33,6 +33,9 @@ const Wepbages = () => {
           <Route path="/impressum" element = {<Impressum />} />
           <Route path="/500" element = {<InternalServer />} />
           <Route path="/test" element = {<Test />} />
+          <Route path="/contact" element = {<Test />} />
+
+          
           <Route path="*" element = {<PageNotFound />} />     
         </Routes>
     );
