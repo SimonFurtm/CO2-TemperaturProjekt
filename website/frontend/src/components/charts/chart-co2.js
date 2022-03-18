@@ -23,7 +23,6 @@ class ChartCo2 extends Component {
     }
 
   render(){
-    console.log("Render")
     data3 = this.state.chartData.map((chartData) => ({
       RPI_ID: chartData.RPI_ID, datum: formate.changeDatumFormat(chartData.Datum), co2: chartData.CO2, time: formate.changeTimeFormat(chartData.Uhrzeit)
     }));

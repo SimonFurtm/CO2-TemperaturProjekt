@@ -50,7 +50,7 @@ class Dashboard extends Component {
                 <h2>Raspberry Daten:</h2>
                 <Carousel variant="dark">
                     <CarouselItem className="chart">
-                        <ChartCo2 dataFromParent={3} />
+                        <ChartCo2 dataFromParent={id} />
                         <Carousel.Caption>
                             <h3>CO2</h3>
                         </Carousel.Caption>

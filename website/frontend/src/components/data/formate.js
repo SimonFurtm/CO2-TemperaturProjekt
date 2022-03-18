@@ -5,13 +5,11 @@ class Formate{
     let month = ""
     let day = ""
     
-    console.log(datum2)
     year = datum2.slice(0,4)
     month = datum2.slice(4,6)
     day = datum2.slice(6,8)
 
     const datum3 = day + "." + month + "." + year
-    console.log(datum3)
     return datum3;
 }
 
