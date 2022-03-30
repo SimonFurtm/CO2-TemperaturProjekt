@@ -1,11 +1,15 @@
 import React, { Component, useRef  } from 'react';
 import { Button, Navbar, Container, Nav,NavDropdown, Row, Col } from 'react-bootstrap';
-import emailjs from '@emailjs/browser';
 import logo from '../logo.svg';
 import "./components.css";
+import EmailTable from "../components/data/emailTable";
 
+import emailjs,{ init } from '@emailjs/browser';
 
-const sgMail = require('@sendgrid/mail')
+init("lLUKmWgHA9IfR-zoZ"); //user id
+
+//Sendgrid:
+/*const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 const msg = {
@@ -29,6 +33,26 @@ function sendMail(event,sgMail){
   
   alert('Email sollte gesendet werden');
   //event.preventDefault(); 
+}*/
+
+//EmailJs:
+
+
+const sendEmailJs = (e) => {
+  emailjs.send("service_18g3pzj","template_daten",{
+      to_name: "Simon",
+      from_name: "CoZwei",
+      message: "Hier sind deine angeforderten Daten von der Website",
+      sensorID: "",
+      datum: "",
+      zeit: "",
+      temperatur: "",
+      luft: "",
+      co2: "",
+      dataTable: <EmailTable />,
+      reply_to: "cozwei.project@gmail.com",
+      });
+  alert("Email wurde versendet.")
 }
 
 class NavBar extends Component {
@@ -36,6 +60,12 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+
+  componentDidMount() {
+    fetch('/daten/get')
+      .then(res => res.json())
+      .then(dataTable => this.setState({dataTable}, () => console.log('Data fetched...', dataTable)));
   }
   
   render() {
@@ -61,7 +91,7 @@ class NavBar extends Component {
                 </Navbar.Collapse>
               </Nav>
             
-            <Button onClick={sendMail} >Send a E-mail</Button>
+            <Button onClick={sendEmailJs} >Send a E-mail</Button>
           </Container>
         </Navbar>
       </div>
